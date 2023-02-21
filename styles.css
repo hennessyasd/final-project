@@ -1,3 +1,57 @@
+/*reset styles*/
 *{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
+html:focus-within{
+    scroll-behavior: smooth;
+}
+body{
+    max-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+img, 
+picture{
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+/*reset styles*/
+
+/*Helper start*/
+ .container{
+    --container-width: 1200px;
+
+    max-width: var(--container-width);
+    padding: 0 15px;
+    margin: 0 auto;
+ }
+/*Helper end*/
+
+/*Veriables start*/
+:root {
+    --main-color: #37447E;
+    --secondary-color: #505F98;
+    --header-box-color: #091133;
+    --button-color: #111B47;
+    --button-text-color: #091133;
+    --numbers-color: #222F65;
+  }
+/*Veriables end*/
+
+/*styles start*/
+
+/*styles end*/
