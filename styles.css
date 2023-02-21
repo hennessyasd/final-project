@@ -19,7 +19,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 img, 
-picture{
+picture,
+hr{
     max-width: 100%;
     display: block;
 }
@@ -53,5 +54,72 @@ select{
 /*Veriables end*/
 
 /*styles start*/
+/*navigation start*/
+.header .container .navigation .header-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+}
 
+.header .container .navigation .header-list li{
+    list-style-type: none;
+    padding: 0 1rem;
+    font-size: 2vh;
+    margin: 1rem 1rem;
+    padding: 10px;
+}
+
+.header .container .navigation a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+}
+.header .container .navigation .logo{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.header .container .navigation .logo:hover{
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+.header .container .navigation a:hover{
+    color: var(--header-box-color);
+    transition: 1s;
+}
+
+.header .container .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .navigation .logo, span{
+    font-size: 2vw;
+}
+/*navigation end*/
+
+/*main start*/
+.main{
+    width: 1440px;
+    height: 1628px;
+    background-image: url(/*image*/);
+}
+.main .container .section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(18rem + 17vmin);
+}
+.main .container .section .main-button{
+    width: 1vw;
+    height: 1vh;
+}
+.main .container .section .main-button .space{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7vw;
+}
+/*main end*/
 /*styles end*/
