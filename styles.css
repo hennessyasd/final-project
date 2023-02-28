@@ -59,7 +59,6 @@ select{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    background-color: #ffff;
 }
 
 .header .container .navigation .header-list li{
@@ -102,9 +101,18 @@ select{
 
 /*main start*/
 .main{
-    width: 1440px;
-    height: 1628px;
+    /* width: 1440px;
+    height: 1628px; */
     background-image: url(/*image*/);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: calc(4rem + 4vmin);
+}
+.main >.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .main .container .section{
     display: flex;
@@ -112,14 +120,51 @@ select{
     flex-direction: column;
     width: calc(18rem + 17vmin);
 }
+.main .container .section p{
+    font-size: calc(.65rem + .65vmin);
+    margin-top: 2vh;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+/*button-main start*/
 .main .container .section .main-button{
-    width: 1vw;
-    height: 1vh;
+    width: 7vw;
+    height: 3vh;
+    padding: 0;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
-.main .container .section .main-button .space{
-    display: flex;
-    justify-content: space-between;
-    margin: 0.7vw;
+.main .container .section .b1{
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: #ffff;
 }
+
+.main .container .section .b2{
+    background-color:  rgba(28,28,28,0);
+    border-color: var(--button-color);
+    color: var(--button-color);
+    margin: 3.2vw 3vh;
+    opacity: 1;
+}
+/*button-main end*/
+
 /*main end*/
+
+/*for-lines-style start*/
+    .top-line{
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+/*for-lines-style end*/
 /*styles end*/
