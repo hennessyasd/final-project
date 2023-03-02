@@ -49,11 +49,14 @@ select{
     --header-box-color: #091133;
     --button-color: #111B47;
     --button-text-color: #091133;
+    --button-border-color: #091133;
     --numbers-color: #222F65;
     --footer-gray-text: #939EA4;
     --footer-background-color: #E7ECFF;
     --footer-text-color: #929ECC;
     --footer-hr-color: #CDD1D4;
+    --text-size: 14px;
+    --icons-color: #B0B8BC;
   }
 /*Veriables end*/
 
@@ -138,6 +141,10 @@ select{
     letter-spacing: 1px;
     color: var(--secondary-color);
 }
+.main .container .section h1{
+    color: var(--main-color);
+    font-size: 2vw;
+}
 
 /*button-main start*/
 .main .container .section .main-button{
@@ -153,7 +160,7 @@ select{
 }
 .main .container .section .b1{
     background-color: var(--button-color);
-    border-color: var(--button-color);
+    border-color: var(--button-border-color);
     color: #ffff;
 }
 .main .container .section .b1:hover{
@@ -190,7 +197,7 @@ select{
     height: 14vw;
 }
 .footer .container .company-text{
-    font-size: 14px;
+    font-size: var(--text-size);
     color: var(--footer-gray-text);
 }
 .footer .container .pre-footer{
@@ -207,7 +214,8 @@ select{
 .footer .container .double-list{
     display: flex;
     align-items: center;
-    padding: 1.3vw;
+    justify-content: space-between;
+    padding-top: 1.3vw;
 }
 .footer .container .double-list .footer-list-info {
     display: flex;
@@ -220,7 +228,20 @@ select{
 .footer .container .double-list .footer-list-info a{
     text-decoration: none; 
     color: var(--footer-text-color);
-    padding: 0 1vw;
+    padding-right: 60px;
+}
+.footer .container .double-list .footer-list-socwebs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .container .double-list .footer-list-socwebs li{
+    list-style-type: none;
+    padding: 15px;
+}
+.footer .container .double-list .footer-list-socwebs a{
+    text-decoration: none;
+    color: var(--icons-color);
 }
 /*footer end*/
 

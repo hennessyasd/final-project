@@ -30,9 +30,9 @@
     }
 
       /* .d-2:hover {
-    transform:translate(0,0);
+    transform:translate(0,0);ы
     clip-path: 
-      polygon(100% var(--c), calc(100% - var(--c)) 0%, 
+      polygon(100% var(--c), calc(100% - var(--c)) 0%
       0% 0%, 
       0% calc(100% - var(--c)), var(--c) 100%, 
       100% 100%,
