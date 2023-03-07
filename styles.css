@@ -57,6 +57,7 @@ select{
     --footer-hr-color: #CDD1D4;
     --text-size: 14px;
     --icons-color: #B0B8BC;
+    --background-color: #E7ECFF;
   }
 /*Veriables end*/
 
@@ -103,7 +104,7 @@ select{
 }
 
 .header .container .navigation .logo, span{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 /*navigation end*/
 
@@ -111,23 +112,29 @@ select{
 .main{
     /* width: 1440px;
     height: 1628px; */
-    background-image: url(/*image*/);
-    display: flex;
+    display: flex;  
     justify-content: space-evenly;
     align-items: center;
-    margin: calc(6rem + 6vmin);
-    margin-bottom: 50vh;
+    margin-top: 10vw;
+    padding-bottom: 40vh;
 }
 .main >.container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
     background-color: rgba(231, 236, 255, 0.5);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+.main image{
+    max-width: 100%;
+    height: auto;
+    background-image: url(imges/img1.jpeg);
+    
 }
 .main .container .section{
     display: flex;
@@ -145,6 +152,9 @@ select{
     color: var(--main-color);
     font-size: 2vw;
 }
+/*bacground-img start*/
+
+/*bacground-img end*/
 
 /*button-main start*/
 .main .container .section .main-button{
@@ -162,15 +172,12 @@ select{
     background-color: var(--button-color);
     border-color: var(--button-border-color);
     color: #ffff;
+    transition: 0.6s linear;
 }
 .main .container .section .b1:hover{
-    transform:translate(0,0);
-    clip-path: 
-      polygon(100% var(--c), calc(100% - var(--c)) 0%, 
-      0% 0%, 
-      0% calc(100% - var(--c)), var(--c) 100%, 
-      100% 100%,
-      100% 100%);
+    background-color: #fff;
+    color: var(--button-color);
+    border-color: var(--button-color);
 }
 
 .main .container .section .b2{
@@ -179,14 +186,11 @@ select{
     color: var(--button-color);
     margin: 3.2vw 3vh;
     opacity: 1;
+    transition: 0.6s linear;
 }
 .main .container .section .b2:hover{
-    transition: all 0.2s linear 1s;
-    transform: scale(1,1);
-    -webkit-transition: all 0.2s linear 1s;
-    -moz-transition: all 0.2s linear 1s;
-    -ms-transition: all 0.2s linear 1s;
-    -o-transition: all 0.2s linear 1s;
+    background-color: var(--header-box-color);
+    color: #fff;
 }
 /*button-main end*/
 /*main end*/
@@ -195,6 +199,9 @@ select{
 .footer{
     background-color: var(--footer-background-color);
     height: 14vw;
+}
+.footer .foot-cont{
+    background-color: var(--footer-background-color);
 }
 .footer .container .company-text{
     font-size: var(--text-size);
@@ -232,7 +239,7 @@ select{
 }
 .footer .container .double-list .footer-list-socwebs{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .footer .container .double-list .footer-list-socwebs li{
