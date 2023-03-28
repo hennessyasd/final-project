@@ -161,6 +161,7 @@ select{
     justify-content: center;
     flex-direction: column;
     width: calc(18rem + 30vmin);
+    z-index: 1;
 }
 .main .container .section p{
     font-size: calc(.65rem + .65vmin);
@@ -250,6 +251,7 @@ select{
     padding-bottom: 3vh;
     padding-top: 2vh;
 }
+
 .footer .container hr{
     margin-bottom: 2vh;
     border: 1px solid var(--footer-hr-color);
@@ -293,6 +295,10 @@ select{
 .footer .container .double-list .footer-list-socwebs a{
     text-decoration: none;
     color: var(--icons-color);
+}
+.footer .container .pre-footer .footer-logo{
+    color: var(--main-color);
+    font-size: 3vw;
 }
 /*footer end*/
 
@@ -400,16 +406,18 @@ select{
     /*navbar end*/
 
     /*main start*/
+    .main{
+        padding-bottom: 10vh;
+    }
     .main .container .section p{
         border-left-style: none;
         padding-left: 0;
-        opacity: .7;
         color: var(--button-border-color);
     }
     .main .container .section{
         text-align: center;
         position: relative;
-        left: calc(1rem + 1vmin);
+        width: calc(2rem + 84vmin);
     }
     .main .container .section .space {
         display: flex;
@@ -431,14 +439,32 @@ select{
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 0 8vw 0;
+        padding: 0 6.8vw 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: auto;
         margin-top: 4vh;
     }
+    .main .container:nth-child(2) {
+     position: relative;
+     right: 4vw;   
+    }
     /*main end*/ 
+    /*footer start*/
+    .footer .container .company-text {
+        font-size: 1vh;
+    }
+    .footer .container .double-list .footer-list-socwebs li {
+        padding: 5px;
+    }
+    .footer .container .double-list .footer-list-info a {
+        font-size: 14px;
+    }
+    .footer .container .pre-footer .footer-logo{
+        font-size: calc(.7rem + .5vmin);
+    }
+    /*footer end*/
 }
 /*media queries end*/
 /*styles end*/
