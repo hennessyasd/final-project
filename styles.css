@@ -77,6 +77,9 @@ select{
     margin: 1rem 1rem;
     padding: 10px;
 }
+.header .container .navigation .header-list .list-elem{
+    text-shadow: 2px 2px 4px black;
+}
 
 .header .container .navigation a{
     text-decoration: none;
@@ -338,7 +341,7 @@ select{
     /*main end*/
   }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
     /*navbar start*/
     .header .container .navigation .logo{
         font-size: calc(1rem + 4vmin);
@@ -406,13 +409,13 @@ select{
     /*navbar end*/
 
     /*main start*/
-    .main{
-        padding-bottom: 10vh;
-    }
     .main .container .section p{
         border-left-style: none;
         padding-left: 0;
         color: var(--button-border-color);
+        font-family: 'Oswald', sans-serif;
+        font-size: calc(.9rem + 1vmin);
+        font-weight: bold;
     }
     .main .container .section{
         text-align: center;
@@ -457,9 +460,10 @@ select{
     }
     .footer .container .double-list .footer-list-socwebs li {
         padding: 5px;
+        font-size: calc(.5rem + 1vmin);
     }
     .footer .container .double-list .footer-list-info a {
-        font-size: 14px;
+        font-size: calc(.5rem + 1vmin);
     }
     .footer .container .pre-footer .footer-logo{
         font-size: calc(.7rem + .5vmin);
