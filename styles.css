@@ -420,7 +420,7 @@ select{
     .main .container .section{
         text-align: center;
         position: relative;
-        width: calc(2rem + 84vmin);
+        width: calc(1rem + 83vmin);
     }
     .main .container .section .space {
         display: flex;

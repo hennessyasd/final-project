@@ -1,0 +1,39 @@
+.mainPortfolio{
+    display: block;
+    margin-top: 10vw;
+    padding-bottom: 20vh;
+    font-family: 'Roboto', sans-serif;
+}
+.contPortfolio{
+    --container-width: 1200px;
+
+    max-width: var(--container-width);
+    padding: 0 5px;
+    margin: 0 auto;
+}
+.mainPortfolio .contPortfolio .sectionPortfolio h1{
+    color: var(--main-color);
+    font-size: calc(1rem + 3vmin);
+}
+.mainPortfolio .contPortfolio .sectionPortfolio p {
+    font-size: calc(.65rem + .65vmin);
+    margin-top: 2vh;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    border-left-style: solid;
+    padding-left: calc(1rem + 1vmin);
+}
+
+.mainPortfolio .contPortfolio .sectionPortfolio2 h1 {
+    text-align: right;
+}
+
+.mainPortfolio .contPortfolio .sectionPortfolio2 p {
+    text-align: right;
+    border-left-style: none;
+    border-right-style: solid;
+    padding-right: calc(1rem + 1vmin);   
+}
+.mainPortfolio .contPortfolio .sectionPortfolio2{
+    
+}
