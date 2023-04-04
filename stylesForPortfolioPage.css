@@ -1,3 +1,4 @@
+/*styles start*/
 .mainPortfolio{
     display: block;
     margin-top: 10vw;
@@ -8,8 +9,11 @@
     --container-width: 1200px;
 
     max-width: var(--container-width);
-    padding: 0 5px;
     margin: 0 auto;
+    padding: 5vh 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .mainPortfolio .contPortfolio .sectionPortfolio h1{
     color: var(--main-color);
@@ -34,6 +38,80 @@
     border-right-style: solid;
     padding-right: calc(1rem + 1vmin);   
 }
-.mainPortfolio .contPortfolio .sectionPortfolio2{
-    
+.mainPortfolio .contPortfolio .photo >img{
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
 }
+.mainPortfolio .contPortfolio .photo{
+    padding: 1vw;
+    margin-top: 7vw;
+}
+.mainPortfolio .contPortfolio .sectionPortfolio {
+    width: 80%;
+}
+img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/*button toUp start*/
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    }
+/*button toUp end*/
+/*styles end*/
+/*media queries start*/
+@media (max-width: 1200px) {
+    img{
+        max-width: 95%;
+    }
+}
+@media (max-width: 750px) {
+    .contPortfolio{
+        display: block;
+    }
+    img{
+        max-width: 60%;
+        margin: auto;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .mainPortfolio .contPortfolio .photo >img{
+        border-radius: 70px;
+        -webkit-border-radius: 70px;
+        -moz-border-radius: 70px;
+        -ms-border-radius: 70px;
+        -o-border-radius: 70px;
+}
+    .mainPortfolio .contPortfolio .sectionPortfolio {
+        margin: auto;
+    }
+    .mainPortfolio .contPortfolio .sectionPortfolio p {
+        border-left-style: none;
+        padding-left: 0;
+        border-right-style: none;
+        padding-right: 0;
+    }
+    .mainPortfolio .block-2 .sectionPortfolio:nth-child(1) {
+        
+    }
+    .mainPortfolio .block-2 .photo:nth-child(2) {
+        
+    }
+}
+@media (max-width: 550px) {
+
+}
+/*media queries end*/
