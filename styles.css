@@ -195,6 +195,7 @@ select{
     justify-content: space-around;
 }
 .main .container .section .b1{
+    width: auto;
     background-color: var(--button-color);
     border-color: var(--button-border-color);
     color: #ffff;
@@ -210,13 +211,13 @@ select{
 }
 
 .main .container .section .b2{
+    width: auto;
     background-color: #ffff;
     border-color: var(--button-color);
     color: var(--button-color);
     opacity: 1;
     transition: 0.6s linear;
     padding: 0 1.5vw 0;
-    width: auto;
     -webkit-transition: 0.6s linear;
     -moz-transition: 0.6s linear;
     -ms-transition: 0.6s linear;
