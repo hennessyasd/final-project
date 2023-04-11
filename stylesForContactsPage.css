@@ -160,7 +160,29 @@
 }    
 /* styles end */
 /*media queries start*/
-@media (max-width: 800){
-
+@media (max-width: 800px){
+    .semi-main .BLOCK-2 {
+        width: 113%;
+        position: relative;
+        left: -16px;
+    }
+}
+@media(max-width: 609px){
+    .semi-main .container .BLOCK-2{
+        top: 7vh;
+    }
+}
+@media (max-width: 550px){
+    .mainContacts .contContacts .gallery{
+        flex-direction: column;
+    }
+    .mp-contacts-main-title {
+        color: var(--background-color);
+    }
+    .semi-main .BLOCK-2 {
+        width: 113%;
+        position: relative;
+        left: -16px;
+    }
 }
 /*media queries end*/
