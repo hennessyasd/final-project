@@ -63,7 +63,10 @@
     margin: 0;
     margin-bottom: 15vh;
 }
-.semi-main .BLOCK-1{
+.semi-main > .container{
+    margin: 0;
+}
+.semi-main .BLOCK{
     padding: 16px 30px 33px 40px;
     flex: 0 0 330px;
     -webkit-box-flex: 0;
@@ -72,15 +75,16 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
     0 10px 10px rgba(0,0,0,0.22);
     margin-bottom: 5vh;
+    min-height: 100%;
 }   
-.semi-main .BLOCK-1 .mp-contacts-title{
+.semi-main .BLOCK .mp-contacts-title{
     font-size: 24px;
     font-weight: 400;
     line-height: 54px;
     letter-spacing: -.8px;
     margin: 0;
 }
-.semi-main .BLOCK-1 .mp-contacts-hours{
+.semi-main .BLOCK .mp-contacts-hours{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -88,7 +92,7 @@
     margin: -3px 0 16px 0;
     color: white;
 }
-.semi-main .BLOCK-1 .mp-contacts-phones .mp-contacts-phones-Item
+.semi-main .BLOCK .mp-contacts-phones .mp-contacts-phones-Item
 .mp-contacts-phones-item-title{
     color: #6e6e6e;
     font-size: 15px;
@@ -96,7 +100,7 @@
     line-height: 24px;
     margin: 0 0 2px 0;
 }
-.semi-main .BLOCK-1 .mp-contacts-phones .mp-contacts-phones-Item
+.semi-main .BLOCK .mp-contacts-phones .mp-contacts-phones-Item
 .mp-contacts-phone{
     color: #212121;
     font-size: 18px;
@@ -104,34 +108,26 @@
     outline: 0;
     text-decoration-line: none;
 }
-.semi-main .BLOCK-1 .mp-contacts-email{
+.semi-main .BLOCK .mp-contacts-email{
     display: flex;
     position: relative;
     justify-content: space-around;
-    right: calc(1rem + 0.1vw);
     z-index: 1;
     top: 1vmin;
 }
 
-.semi-main .BLOCK-1 .mp-contacts-email .mp-cont-email{
+.semi-main .BLOCK .mp-contacts-email .mp-cont-email{
     color: #0169d9;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    word-break: break-all;
+    padding-left: 8px;
 }
 
 .semi-main .BLOCK-2{
-    border-radius: 10px;
     background-color: #f8f6ec;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 330px;
-    flex: 0 0 330px;
-    padding: 16px 30px 33px 40px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-     0 10px 10px rgba(0,0,0,0.22);
-    margin-bottom: 5vh;
+    padding: 16px 40px 33px 40px;
 }
 .semi-main .BLOCK-2 .mp-contacts-title{
     font-size: 24px;
@@ -150,7 +146,7 @@
 .mp-contacts-li-elems .mp-contacts-href{
     width: 100%;
     display: flex;
-    padding: 1vw;
+    padding: 0.28vw;
 }
 .semi-main .BLOCK-2 .mp-contacts-contact-ullist 
 .mp-contacts-li-elems .mp-contacts-href .mp-link{
@@ -163,3 +159,8 @@
     padding-left: 1vw;
 }    
 /* styles end */
+/*media queries start*/
+@media (max-width: 800){
+
+}
+/*media queries end*/
