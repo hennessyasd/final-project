@@ -22,8 +22,9 @@ body{
 img, 
 picture,
 hr{
-    max-width: 100%;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 input,
 button,
@@ -36,11 +37,10 @@ select{
 /*Helper start*/
  .container{
     --container-width: 1200px;
-
     max-width: var(--container-width);
     padding: 0 15px;
     margin: 0 auto;
- }
+}
 /*Helper end*/
 
 /*Veriables start*/
@@ -90,6 +90,9 @@ select{
 .header .container .navigation .logo{
     text-decoration: none;
     color: var(--main-color);
+    position: relative;
+
+    animation-name: nav-logo;
 }
 .header .container .navigation .logo:hover{
     text-decoration: none;
@@ -105,6 +108,10 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    animation-name: nav;
+    animation-delay: .1s;
+    animation-duration: 5s;
 }
 
 .header .container .navigation .logo, span{
@@ -472,3 +479,33 @@ select{
 }
 /*media queries end*/
 /*styles end*/
+/*keyframes start*/
+/*nav animation start*/
+@keyframes nav{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+};
+@keyframes nav-logo{
+        from {
+            transform: translateY(-150%);
+            -webkit-transform: translateY(-150%);
+            -moz-transform: translateY(-150%);
+            -ms-transform: translateY(-150%);
+            -o-transform: translateY(-150%);
+        }
+        to {
+            transform: translateY(0);
+        }
+};
+/*
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+*/
+
+/*nav animation end*/
+/*keyframes end*/

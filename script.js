@@ -1,3 +1,2 @@
-// let bLearnMore = document.getElementById(bLearnMore);
+//element.removeEventListener(event, handler, [options]);
 
-// bLearnMore.addEventListener('click');

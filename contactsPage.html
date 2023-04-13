@@ -16,6 +16,7 @@
     <!-- Google fonts end -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylesForContactsPage.css">
+    <link rel="stylesheet" href="preloader.css">
     <!-- fav-icon start-->
     <link rel="icon" type="image/x-icon" href="icons/letter-l.png">
     <!-- fav-icon end-->
@@ -24,6 +25,16 @@
     <!-- bootstrap-icons end -->
 </head>
 <body>
+    <!-- preloader start -->
+    <div id="preloader" class="prealoder__wrapper">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+        </div>
+    </div>
+    <!-- preloader end -->
     <header class="header">
         <div class="container">
             <nav class="navigation">
@@ -43,31 +54,35 @@
         <h1 class="mp-contacts-main-title"> My contacts!</h1>
         <div class="container contContacts">
             <div class="gallery">
-                <img src="imges/img2.jpeg" alt="img">
-                <img src="imges/img2.jpeg" alt="img">
-                <img src="imges/img2.jpeg" alt="img">
-                <img src="imges/img2.jpeg" alt="img">
-                <img src="imges/img2.jpeg" alt="img">
+                <img src="imges/cont1.png" width="800" height="600" class="gallery-img1" alt="img">
+                <img src="imges/cont3.jpg" width="800" height="600" class="gallery-img2" alt="img">
+                <img src="imges/cont2.png" width="1536" height="876" class="gallery-img3" alt="img">
+                <img src="imges/cont4.png" width="1111" height="421" class="gallery-img4" alt="img">
+                <img src="imges/cont5.png" width="1280" height="854" class="gallery-img5" alt="img">
             </div>
         </div>
         <ul class="semi-main">
-            <li class="BLOCK-1">
-                <h2 class="mp-contacts-title">Contacts:</h2>
-                <p class="mp-contacts-hours" >
-                  Mn - Fr - Work days. <br/> Sat, Sun - day off.
-                </p>
-                <ul class="mp-contacts-phones">
-                          <li class="mp-contacts-phones-Item">
-                    <p class="mp-contacts-phones-item-title">Always in touch! :)</p>
-                    <a href="tel:+375297076513" class="mp-contacts-phone">+375 29 707-65-13</a>
+            <div class="container">
+                <li class="BLOCK BLOCK-1">
+                    <h2 class="mp-contacts-title">Contacts:</h2>
+                    <p class="mp-contacts-hours" >
+                      Mn - Fr - Work days. <br/> Sat, Sun - day off.
+                    </p>
+                    <ul class="mp-contacts-phones">
+                              <li class="mp-contacts-phones-Item">
+                        <p class="mp-contacts-phones-item-title">Always in touch! :)</p>
+                        <a href="tel:+375297076513" class="mp-contacts-phone">+375 29 707-65-13</a>
+                      </li>
+                            </ul>
+                    <a href="mailto:igor10212005@gmail.com" class="mp-contacts-email">
+                    <img src="svg/oah-mail.svg" class="mp-contacts-icon" alt="icon">
+                      <span class="mp-cont-email">igor10212005@gmail.com</span>
+                    </a>
                   </li>
-                        </ul>
-                <a href="mailto:igor10212005@gmail.com" class="mp-contacts-email">
-                <img src="svg/oah-mail.svg" class="mp-contacts-icon" alt="icon">
-                  <span class="mp-cont-email">igor10212005@gmail.com</span>
-                </a>
-              </li>
-              <li class="BLOCK-2">
+                  
+            </div>
+              <div class="container">
+                <li class="BLOCK BLOCK-2">
                 <h2 class="mp-contacts-title">Contact with me:</h2>
                 <ul class="mp-contacts-contact-ullist">
                           <li class="mp-contacts-li-elems">
@@ -92,6 +107,7 @@
                   </li>
                         </ul>
                       </li>
+              </div>
         </ul>
     </main>
     <footer class="footer">
@@ -122,6 +138,7 @@
             
         </div>
     </footer>
+    <script src="preloader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
