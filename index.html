@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <!-- Google fonts end -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="preloader.css">
     <!-- fav-icon start-->
     <link rel="icon" type="image/x-icon" href="icons/letter-l.png">
     <!-- fav-icon end-->
@@ -23,6 +24,16 @@
     <!-- bootstrap-icons end -->
 </head>
 <body>
+    <!-- preloader start -->
+    <div id="preloader" class="prealoder__wrapper">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+        </div>
+    </div>
+    <!-- preloader end -->
     <header class="header">
         <div class="container">
             <nav class="navigation">
@@ -51,7 +62,7 @@
             </div>
         </div>
         <div class="container photo">
-            <img src="imges/img1.jpeg" alt="landie photo">
+            <img src="imges/img1.jpeg" width="800" height="1200" alt="landie photo">
         </div>
     </main>
     <footer class="footer">
@@ -79,9 +90,9 @@
                     </ul>
                 </div>
             </div>
-            
         </div>
     </footer>
+    <script src="preloader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

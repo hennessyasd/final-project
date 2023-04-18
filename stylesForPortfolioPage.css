@@ -68,7 +68,18 @@ img{
     border: 1px solid var(--main-color);
     color: var(--main-color);
     font-size: calc();
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
     }
+
+#toTop.active {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}   
 #toTop:hover{
     background-color: var(--header-box-color);
     color: #fff;

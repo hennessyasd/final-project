@@ -10,6 +10,9 @@
 *::after{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 html:focus-within{
     scroll-behavior: smooth;
 }
@@ -22,8 +25,9 @@ body{
 img, 
 picture,
 hr{
-    max-width: 100%;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 input,
 button,
@@ -110,7 +114,7 @@ select{
 
     animation-name: nav;
     animation-delay: .1s;
-    animation-duration: 6s;
+    animation-duration: 1s;
 }
 
 .header .container .navigation .logo, span{
@@ -500,5 +504,11 @@ select{
             transform: translateY(0);
         }
 };
+/*
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+*/
+
 /*nav animation end*/
 /*keyframes end*/
