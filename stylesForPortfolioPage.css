@@ -73,6 +73,21 @@ img{
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
 }
+.mainPortfolio .header-block .animation-right{
+    animation-name: slide-in-right;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
+.mainPortfolio .block-2 .animation-left{
+    animation-name: slide-in-left;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
+.mainPortfolio .footer-block .animation-right{
+    animation-name: slide-in-right;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
 /*button toUp start*/
 #toTop {
     border-color: var(--button-color);
