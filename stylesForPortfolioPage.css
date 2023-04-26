@@ -1,7 +1,7 @@
 /*styles start*/
 .mainPortfolio{
     display: block;
-    margin-top: 10vw;
+    margin-top: 3vw;
     padding-bottom: 20vh;
     font-family: 'Roboto', sans-serif;
 }
@@ -73,17 +73,20 @@ img{
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
 }
-.mainPortfolio .header-block .animation-right{
+.mainPortfolio .contPortfolio .block-1 {
+    padding-right: 3vw;
+}
+.mainPortfolio .header-block {
     animation-name: slide-in-right;
     animation-delay: 1s;
     animation-duration: 1.5s;
 }
-.mainPortfolio .block-2 .animation-left{
+.mainPortfolio .block-2 {
     animation-name: slide-in-left;
     animation-delay: 1s;
     animation-duration: 1.5s;
 }
-.mainPortfolio .footer-block .animation-right{
+.mainPortfolio .footer-block {
     animation-name: slide-in-right;
     animation-delay: 1s;
     animation-duration: 1.5s;

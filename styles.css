@@ -111,8 +111,8 @@ select{
     align-items: center;
 
     animation-name: nav;
-    animation-delay: .1s;
-    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-duration: 2.5s;
 }
 
 .header .container .navigation .logo, span{
@@ -511,10 +511,10 @@ select{
 /*keyframes start*/
 /*nav animation start*/
 @keyframes nav{
-    from{
+    0%{
         opacity: 0;
     }
-    to{
+    100%{
         opacity: 1;
     }
 };
