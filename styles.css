@@ -158,6 +158,7 @@ select{
     animation-name: slide-in-right;
     animation-duration: 1s;
     animation-delay: 1.1s;
+    animation-fill-mode: forwards;
 }
 
 .main .photo>img{
@@ -181,6 +182,7 @@ select{
     animation-name: slide-in-top;
     animation-delay: 1s;
     animation-duration: 1.1s;
+    animation-fill-mode: forwards;
 }
 .main .container .section p{
     font-size: calc(.65rem + .65vmin);
@@ -413,6 +415,12 @@ select{
         flex-direction: column;
         padding-bottom: 10vh;
     }
+    .main .photo{
+        animation-name: slide-fwd-center;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
     .main .container .section p{
         border-left-style: none;
         padding-left: 0;
@@ -612,5 +620,29 @@ select{
       opacity: 1;
     }
   }
+  
+@-webkit-keyframes slide-fwd-center {
+  0% {
+            transform: translateZ(0);
+            opacity: 0;
+}
+  100% {
+            transform: translateZ(160px);
+            opacity: 1;
+}
+}
+@keyframes slide-fwd-center {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
 /*nav animation end*/
 /*keyframes end*/
